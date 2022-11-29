@@ -58,6 +58,7 @@ import { createWorker, PSM, OEM, Tesseract} from 'tesseract.js'
         })
         const { data: { text } } = await worker.recognize(img)
         textResult.value = text
+        console.log('dari ceknik',text)
         parseKTP(text)
       }
       
